@@ -18,17 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey this is Avinash's first app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-rG-IvU">
-                                <rect key="frame" x="95.5" y="438" width="223" height="20.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-l1-CY3" userLabel="SecondButton">
+                                <rect key="frame" x="144" y="431.5" width="126" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Sign into Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wme-FP-BPh" userLabel="FirstButton">
+                                <rect key="frame" x="134" y="388.5" width="146" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign into Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWG-Lv-QE4">
+                                <rect key="frame" x="140.5" y="474.5" width="133" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign in with email"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="I0n-rG-IvU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HMF-xv-hmW"/>
-                            <constraint firstItem="I0n-rG-IvU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jsO-xx-TeD"/>
+                            <constraint firstItem="Wme-FP-BPh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5tr-jK-1Zi"/>
+                            <constraint firstItem="aRm-l1-CY3" firstAttribute="top" secondItem="Wme-FP-BPh" secondAttribute="bottom" constant="10" id="ChT-Yr-8yb"/>
+                            <constraint firstItem="YWG-Lv-QE4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ERv-Z1-vOG"/>
+                            <constraint firstItem="aRm-l1-CY3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nu5-lL-aX6"/>
+                            <constraint firstItem="YWG-Lv-QE4" firstAttribute="top" secondItem="aRm-l1-CY3" secondAttribute="bottom" constant="10" id="REx-ZE-VjS"/>
+                            <constraint firstItem="aRm-l1-CY3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UEg-2u-80x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
